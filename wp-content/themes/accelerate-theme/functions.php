@@ -51,6 +51,12 @@ function accelerate_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'accelerate_scripts' );
 
+// Enqueue social media icons
+/*  add_action('wp_enqueue_scripts', 'enqueue_load_fa');
+function enqueue_load_fa() {
+	wp_enqueue_style('load-fa','https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'); 
+} */
+
 // Register widget area
 function accelerate_widgets_init() {
 	register_sidebar( array(

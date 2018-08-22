@@ -18,7 +18,7 @@ get_header(); ?>
 		<div class="main-content" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php the_content(); ?>
-				<a class="button" href="<?php echo site_url('/blog/') ?>">View Our Work</a>
+				<a class="button" href="<?php echo site_url('/case-studies/') ?>">View Our Work</a>
 			<?php endwhile; // end of the loop. ?>
 		</div><!-- .main-content -->
 	</div><!-- #primary -->
@@ -27,9 +27,8 @@ get_header(); ?>
 	<section class="featured-work"> 
 		<div class="site-content clearfix">
 			<h4>Featured Work</h4>
-
 			<ul class="homepage-featured-work">
-			<?php query_posts('posts_per_page=3&post_type=case_studies'); ?>
+			<?php query_posts('posts_per_page=3&post_type=case_studies&orderby=title&order=ASC'); ?>
 				<!-- the loop -->
 					<?php while (have_posts() ) : the_post(); 
 						$image_1 = get_field("image_1");
@@ -43,8 +42,8 @@ get_header(); ?>
 							<h3><?php the_title(); ?></h3>
 						</a>
 					</li>
-					<?php endwhile; ?>  <!-- end of the loop -->
-				<?php wp_reset_query(); // resets the altered query back to the originial?>
+					<?php endwhile; //endo of the loop ?>
+				<?php wp_reset_query(); // resets the altered query back to the originial ?>
 			</ul>
 
 		</div>
