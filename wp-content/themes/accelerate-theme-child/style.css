@@ -169,6 +169,48 @@ aside.case-study-sidebar h4 {
 	color: #ffffff;
 }
 
+/* ----- CONTACT US ----- */
+
+.contact-us {
+	/*width: 70%;*/
+}
+
+.contact-us h2 {
+	font: 700 1.5625em/2 'Montserrat', sans-serif;
+	color: #2b2b2b;
+	margin: 50px 0;
+}
+
+.nf-error-msg, .ninja-forms-req-symbol {
+	display: none;
+}
+
+.nf-form-fields-required {
+	display: none;
+}
+
+.nf-field-label label {
+	color: #2b2b2b;
+}
+
+.field-wrap input[type=button] {
+	float: right;
+	background: #45ac9d;
+}
+
+input {
+	display: inline;
+	float: left;
+}
+
+.field-wrap {
+	width: 40%;
+	display: flex;
+}
+
+.field-wrap #nf-field-3 {
+	width: 100%;
+}
 
 /* --- MEDIA QUERIES --- */
 
