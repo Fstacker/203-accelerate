@@ -173,6 +173,7 @@ aside.case-study-sidebar h4 {
 
 .contact-us {
 	/*width: 70%;*/
+	max-width: 960px;
 }
 
 .contact-us h2 {
@@ -198,18 +199,18 @@ aside.case-study-sidebar h4 {
 	background: #45ac9d;
 }
 
-input {
+
+
+/*input {
 	display: inline;
 	float: left;
-}
+}*/
 
-.field-wrap {
-	width: 40%;
+.contact-us #nf-field-1-container 
+.contact-us #nf-field-2-container {
 	display: flex;
-}
-
-.field-wrap #nf-field-3 {
-	width: 100%;
+	flex-wrap: wrap;
+	align-content: space-around;
 }
 
 /* --- MEDIA QUERIES --- */
