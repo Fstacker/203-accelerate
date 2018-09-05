@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 /**
  * The template for displaying a single case study
@@ -41,15 +40,15 @@ get_header(); ?>
 		</aside>
 
 		<div class="case-study-images">
-			<?php if($image_1) {
+			<?php if($image_1) { 
 				echo wp_get_attachment_image($image_1, $size);
-			} ?>
+		 	} ?>
 			
-			<?php if($image_2) { ?
+			<?php if($image_2) { 
 				echo wp_get_attachment_image($image_2, $size);
 			} ?>
 
-			<?php if($image_3) { ?
+			<?php if($image_3) {
 				echo wp_get_attachment_image($image_3, $size);
 			} ?>
 			

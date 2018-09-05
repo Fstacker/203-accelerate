@@ -64,23 +64,9 @@ Text Domain:  accelerate-theme-child
 	clear: both;
 }
 
-.case-study h2 {
-	font: 700 1.5em/1.5 'Open Sans Semibold', sans-serif;
-	color: #333;
-}
-
-.case-study h4 {
-	font: 400 .875em/1.25 'Open Sans', sans-serif;
-	color: #878787;
-	margin: 1em 0;
-}
-
-.case-study h4 span {
-	color: #878787;
-}
-
-.case-study-sidebar p {
-	margin: 2em 0;
+.case-study-sidebar {
+	width: 30%;
+	float: left;
 }
 
 div.case-study-images {
@@ -99,7 +85,7 @@ div.case-study-images img {
 aside.case-study-sidebar h2 {
 	font: 600 1.5em/2.1 'Open Sans', Arial, sans-serif;
 	color: #333;
-	margin: 0;
+	margin: 2em 0 0 0;
 	padding-top: 30px;
 }
 
@@ -107,10 +93,10 @@ aside.case-study-sidebar h5 {
 	font: 400 .875em/1.625 'Open Sans', Arial, sans-serif;
 	color: #888;
 	text-transform: none;
-	margin: 20 0;
+	margin: 1em 0;
 }
 
-aside h6 {
+aside.case-study-sidebar h6 span {
 	font: 400 .875em/1.625 'Open Sans', Arial, sans-serif;
 	color: #222;
 }
@@ -118,7 +104,7 @@ aside h6 {
 aside.case-study-sidebar p {
 	font: 400 1.05em/1.75 'Open Sans', Arial, sans-serif;
 	color: #222;
-	margin: 1em 0;
+	margin: 1.75em 0;
 }
 
 aside.case-study-sidebar .read-more-link a {
