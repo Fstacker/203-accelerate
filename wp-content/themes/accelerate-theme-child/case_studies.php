@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 /**
  * The template for displaying a single case study
