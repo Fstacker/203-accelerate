@@ -182,4 +182,42 @@ aside.case-study-sidebar .read-more-link a {
 	letter-spacing: .75px;
 }
 
-/* ----- 
+/* ----- SOCIAL MEDIA MENU ----- */
+
+.social-media-menu {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	margin: 1em 0 1em 1em;
+}
+
+.social-media-menu span {
+	display: none;
+}
+
+ul.social-media-menu {
+	list-style: none;
+}
+
+.site-footer a {
+	/*font-size: 2em;*/
+	color: #fff;
+	border-radius: 50%;
+	background-color: #444;
+}
+
+.site-footer i {
+	padding-left: 3px;
+	padding-top: 4px;
+}
+
+.site-footer li {
+	list-style: none;
+	margin-left: 1em;
+	display: inline-block;
+	text-align: center;
+	border-radius: 50%;
+	background-color: #333;
+	width: 2em;
+	height: 2em;
+}
