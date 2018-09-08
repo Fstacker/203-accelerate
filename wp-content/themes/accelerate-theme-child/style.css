@@ -23,11 +23,12 @@ Text Domain:  accelerate-theme-child
 
 .page-header .top-logo .title {
 	font: 600 1.5em/1.3125 'Montserrat', sans-serif;
-	letter-spacing: 1px;
+	letter-spacing: 1.5px;
 }
 
 .page-header .primary-navigation ul li a {
-	letter-spacing: 1px;
+	letter-spacing: 1.5px;
+	margin: 0 0 0 1em;
 }
 
 .button {
@@ -56,6 +57,7 @@ Text Domain:  accelerate-theme-child
 	clear: both;
 	width: 100%;
 	flex-wrap: nowrap;
+	border-bottom: 1px solid #bbb;
 }
 
 .featured-work h4 {
@@ -96,7 +98,7 @@ Text Domain:  accelerate-theme-child
 	font: 600 1em/1.75 'Montserrat', Arial, sans-serif;
 	color: #aaa;
 	text-transform: uppercase;
-	margin: 0;
+	margin: 3em 0 0 0;
 	letter-spacing: 1.5px;
 }
 
@@ -128,11 +130,13 @@ Text Domain:  accelerate-theme-child
 }
 
 .case-study-sidebar {
-	width: 30%;
+	width: 35%;
 	float: left;
+	margin-right: 1em;
 }
 
 div.case-study-images {
+	width: 60%;
 	margin-top: 3em;
 	width: 600px;
 	float: right;
@@ -140,7 +144,8 @@ div.case-study-images {
 }
 
 div.case-study-images img {
-	width: 95%;
+	width: 100%;
+	height: auto;
 	margin-bottom: 3.125em;
 	border: 1px solid #ddd;
 } 
@@ -176,3 +181,5 @@ aside.case-study-sidebar .read-more-link a {
 	text-transform: uppercase;
 	letter-spacing: .75px;
 }
+
+/* ----- 
