@@ -221,3 +221,54 @@ ul.social-media-menu {
 	width: 2em;
 	height: 2em;
 }
+
+/* ----- CONTACT US ----- */
+
+/*.main-content {
+	padding: 0;
+	margin: 0;
+	align-items: center;
+	padding-left: 136px;
+	float: left;
+}*/
+
+.contact-us {
+	width: 615px;
+	margin: 0;
+	align-items: center;
+}
+
+.contact-us h2 {
+	font: 600 1.5625em/1.75 'Montserrat', Arial, sans-serif;
+	color: #333;
+	margin: 40px 0 0 0;
+}
+
+/*#nf-field-1-wrap,
+#nf-field-2-wrap {
+	width: 40%;
+	margin: 0;
+} */
+
+span.ninja-forms-req-symbol,
+.nf-form-fields-required {
+	display: none;
+}
+
+input[type="button"], input[type="submit"] {
+	background: #45ac9d;
+	font: 600 1.125em/1.25 'Montserrat', Arial, sans-serif;
+	float: right;
+	width: 200px;
+	height: 50px;
+}
+
+.nf-field-label label {
+	font: 400 .875em/1.625 'Open Sans', Arial, sans-serif;
+	color: #222;
+}
+
+input#nf-field-4.ninja-forms-field {
+	font: 600 1.125em/1 'Montserrat', Arial, sans-serif;
+	letter-spacing: 1px;
+}
