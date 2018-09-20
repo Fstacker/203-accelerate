@@ -20,6 +20,7 @@ get_header(); ?>
 			$image_1 = get_field('image_1');
 			$size = 'full';
 			$services = get_field('services');
+			$link = get_field('site_link')
 			
 		?>
 
