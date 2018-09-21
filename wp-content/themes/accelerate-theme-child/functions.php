@@ -32,28 +32,25 @@ function create_custom_post_types() {
 			//'show_in_nav_menus' => true;
 			)
 		);
+
+	register_post_type ('services',
+		array(
+			'labels' => array(
+				'name' => __('Services'),
+				'singular_name' => __('Service')
+			),
+			'public' => true,
+			'has_archive' => false,
+			'rewrite' => array('slug' => 'services'),
+			'show_in_nav_menus' => true,
+			)
+		);
 	}
 
 // Hook function into theme
 add_action ('init', 'create_custom_post_types');
 
-// Custom About page function
-function child_theme_about_page () {
-	register_post_type ('about',
-		array(
-			'labels' => array(
-				'name' => __ ('About Us'),
-				'singular_name' => __ ('About Us')
-			),
-			'public' => true,
-			'has_archive' => true,
-			'rewrite' => array('slug' => 'about'),
-			)
-		);
-	}
 
-// Hook about function into theme
-add_action ('init', 'child_theme_about_page');
 
 // Enqueue scripts and styles.
 function accelerate_child_scripts() {
