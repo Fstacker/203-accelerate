@@ -19,7 +19,11 @@ get_header(); ?>
 						$type = get_field('type');
 						$description = get_field('description');
 						$icon = get_field('icon');
+<<<<<<< HEAD
 						$size = 'medium-large'
+=======
+						$size = 'medium'
+>>>>>>> about-page
 					?>
 					<?php //the_content(); ?>
 				<?php endwhile; // end of the loop. ?>
@@ -38,10 +42,19 @@ get_header(); ?>
 		<?php query_posts('posts_per_page=4&post_type=services'); ?>
 			<?php while (have_posts() ) : the_post();
 				$icon = get_field('icon');
+<<<<<<< HEAD
 				$size = "medium-large";
 			?>
 				<li class="service-list-item"> 	
 						<h3><?php the_title(); ?></h3>
+=======
+				$description = get_field('description');
+				$size = "medium";
+			?>
+				<li class="service-list-item"> 	
+						<h3><?php the_title(); ?></h3>
+						<p><?php echo $description; ?></p>
+>>>>>>> about-page
 						<figure>
 							<?php echo wp_get_attachment_image($icon, $size); ?>
 						</figure>
