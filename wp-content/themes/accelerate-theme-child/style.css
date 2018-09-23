@@ -34,6 +34,9 @@ Text Domain:  accelerate-theme-child
 .button {
 	background: #45ac9d;
 	margin: 3.5em 0 0;
+	font: 600 1.25em/1 'Montserrat', Arial, sans-serif;
+	color: #fff;
+	letter-spacing: 1px;
 }
 
 .hero-content h1 {
@@ -273,5 +276,70 @@ input#nf-field-4.ninja-forms-field {
 	letter-spacing: 1px;
 }
 
-/* ----- ABOUT US ----- */
+/* ----- ABOUT US | SERVICES ----- */
 
+div.about-description p {
+	font: 600 1.5em/1.5 'Open Sans', Arial, sans-serif;
+	color: #fff;
+	width: 43%;
+	margin: auto;
+}
+
+div.about-services {
+	width: 100%;
+	clear: both;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+div.services h4 {
+	font: 700 .9275em/1.5 'Montserrat', Arial, sans-serif;
+	color: #333;
+	letter-spacing: 1px;
+	clear: both;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 4em;
+}
+
+div.services p {
+	font: 400 1em/1.5 'Open Sans', Arial, sans-serif;
+	color: #333;
+	text-align: center;
+}
+
+div.about-services-box {
+	max-width: 960px;
+	width: 90%;
+	clear: both;
+	display: inline-flex;
+	align-items: center;
+	align-content: center;
+}
+
+.interested-contact {
+	max-width: 960px;
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	clear: both;
+	margin: auto;
+	padding-top: 2em;
+	border-top: 1px solid #bbb;
+}
+
+div.interested-contact h3,
+div.interested-contact .button {
+	margin: 1em;
+}
+
+.interested-contact h3 {
+	font: 600 1.5625em/1.25 'Open Sans', Arial, sans-serif;
+	color: #333;
+}
+
+.services-list ul li {
+	list-style: none;
+}

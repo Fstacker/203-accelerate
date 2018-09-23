@@ -22,5 +22,5 @@ get_header(); ?>
 			<?php endwhile; // end of the loop. ?>
 		</div><!-- .main-content -->
 	</div><!-- #primary -->
-
+<pre><?php print_r($wp_query); exit(); ?></pre>
 <?php get_footer(); ?>
