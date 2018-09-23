@@ -255,7 +255,8 @@ span.ninja-forms-req-symbol,
 	display: none;
 }
 
-input[type="button"], input[type="submit"] {
+input[type="button"], 
+input[type="submit"] {
 	background: #45ac9d;
 	font: 600 1.125em/1.25 'Montserrat', Arial, sans-serif;
 	float: right;
@@ -275,3 +276,65 @@ input#nf-field-4.ninja-forms-field {
 
 /* ----- ABOUT US ----- */
 
+.about-description p {
+	width: 600px;
+	font: 600 1.47em/1.5 'Open Sans', Arial, sans-serif;
+	color: #fff;
+	text-align: center;
+}
+
+div.about-services {
+	width: 100%;
+	clear: both;
+	display: block;
+	text-align: center;
+}
+
+.services h4 {
+	font: 600 .8824em/1.47 'Montserrat', Arial, sans-serif;
+	color: #333;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: center;
+	margin-top: 4em;
+}
+
+.services p {
+	font: 400 1em/1.6 'Open Sans', Arial, sans-serif;
+	color: #333;
+	text-align: center;
+}
+
+.interested-contact {
+	max-width: 960px;
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	clear: both;
+	margin: auto;
+	padding-top: 2em;
+	border-top: 1px solid #bbb;
+}
+
+div.interested-contact h3,
+div.interested-contact .button {
+	margin: 1em;
+}
+
+.interested-contact h3 {
+	font: 600 1.5625em/1.25 'Open Sans', Arial, sans-serif;
+	color: #333;
+}
+
+ul.services-list {
+	max-width: 960px;
+	width: 90%;
+	list-style: none;
+	margin: auto;
+}
+
+li.service-list-item h3 {
+	font: 600 1.5em/2 'Open Sans', Arial, sans-serif;
+	color: #333;
+}
