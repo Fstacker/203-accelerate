@@ -14,53 +14,39 @@ get_header(); ?>
 			<div class="about-description clearfix">
 				<p>Accelerate is a strategy and marketing agency located in the heart of NYC. Our goal is to build businesses by making our clients visible and making their customers smile. </p>
 			</div>				
-				<?php // Start the loop
-					while ( have_posts() ) : the_post();
-						$type = get_field('type');
-						$description = get_field('description');
-						$icon = get_field('icon');
-<<<<<<< HEAD
-						$size = 'medium-large'
-=======
-						$size = 'medium'
->>>>>>> about-page
-					?>
-					<?php //the_content(); ?>
-				<?php endwhile; // end of the loop. ?>
-		
 		</div><!-- .main-content -->
 	</div><!-- #primary -->
 
 	<div class="about-services clearfix">
 		<div class="services">
-			<h4><?php the_title(); ?></h4>
-			<p><?php the_content(); ?></p>
+			<?php // Start the loop
+				while ( have_posts() ) : the_post();
+					$type = get_field('type');
+					$icon = get_field('icon');
+					$size = 'medium';
+				?>
+				<h4><?php the_title(); ?></h4>
+				<p><?php the_content(); ?></p>
+			<?php endwhile; // end of the loop ?>
 		</div>
 	</div>
 
 	<ul class="services-list">
 		<?php query_posts('posts_per_page=4&post_type=services'); ?>
-			<?php while (have_posts() ) : the_post();
+			<?php // start the loop 
+				while (have_posts() ) : the_post();
 				$icon = get_field('icon');
-<<<<<<< HEAD
-				$size = "medium-large";
-			?>
-				<li class="service-list-item"> 	
-						<h3><?php the_title(); ?></h3>
-=======
 				$description = get_field('description');
 				$size = "medium";
 			?>
-				<li class="service-list-item"> 	
 						<h3><?php the_title(); ?></h3>
 						<p><?php echo $description; ?></p>
->>>>>>> about-page
-						<figure>
-							<?php echo wp_get_attachment_image($icon, $size); ?>
-						</figure>
+						<?php if($icon) { 
+							echo wp_get_attachment_image($icon, $size);
+			 			} ?>
 						
 				</li>
-			<?php endwhile; ?>
+			<?php endwhile; //end of the loop ?>
 		<?php wp_reset_query(); ?>
 	</ul>
 
