@@ -17,21 +17,9 @@ get_header(); ?>
 		</div><!-- .main-content -->
 	</div><!-- #primary -->
 
-	<div class="about-services clearfix">
-		<div class="services">
-			<?php // Start the loop
-				while ( have_posts() ) : the_post();
-					$type = get_field('type');
-					$icon = get_field('icon');
-					$size = 'medium';
-				?>
-				<h4><?php the_title(); ?></h4>
-				<p><?php the_content(); ?></p>
-			<?php endwhile; // end of the loop ?>
-		</div>
-	</div>
 
-	<ul class="services-list">
+
+	<!-- <ul class="services-list"> -->
 		<?php query_posts('posts_per_page=4&post_type=services'); ?>
 			<?php // start the loop 
 				while (have_posts() ) : the_post();
@@ -45,10 +33,9 @@ get_header(); ?>
 							echo wp_get_attachment_image($icon, $size);
 			 			} ?>
 						
-				</li>
 			<?php endwhile; //end of the loop ?>
 		<?php wp_reset_query(); ?>
-	</ul>
+	<!-- </ul> -->
 
 
 	<div class="interested-contact clearfix">

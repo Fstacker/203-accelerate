@@ -1,6 +1,6 @@
 <?php
 /**
- * Template name: 404
+ * Template name: Error 404
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -14,17 +14,18 @@
 
 get_header(); ?>
 
-	<div id="primary" class="site-content">
-		<div class="main-content" role="main">
+	<div id="primary" class="error-content">
+		<div class="error-main">
 			<?php while ( have_posts() ) : the_post(); ?>
-				<?php the_content(); ?>
+				<div class="error-message">
+					<p class="four-oh-four">404</p>
+					<p class="message">Look out, we got an error here.<br>Let’s try this again.</p>
+					<?php the_content(); ?>
+				</div>
 			<?php endwhile; // end of the loop. ?>
-		</div><!-- .main-content -->
+		</div>
 	</div><!-- #primary -->
 
-	<div class="error">
-			<!--<img src="/img/404ndg.jpg" alt="ndg-404"> -->
-
-	</div>
+	<!-- <a href="<?php //echo site_url('/case-studies/') ?>"> -->
 
 <?php get_footer(); ?>
