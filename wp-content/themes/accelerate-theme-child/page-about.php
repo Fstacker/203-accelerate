@@ -17,25 +17,23 @@ get_header(); ?>
 		</div><!-- .main-content -->
 	</div><!-- #primary -->
 
+	<div class="about-services clearfix">
+		<div class="services">
+			<?php // Start the loop
+				while ( have_posts() ) : the_post();
+					$type = get_field('type');
+					$description = get_field('description');
+					$icon = get_field('icon');
+					$size = 'full';
+				?>
+				<h4><?php the_title(); ?></h4>
+				<p><?php the_content(); ?></p>
 
+				<h3><?php echo $type; ?></h3>
+			<?php endwhile; // end of the loop ?>
+		</div>
+	</div>
 
-	<!-- <ul class="services-list"> -->
-		<?php query_posts('posts_per_page=4&post_type=services'); ?>
-			<?php // start the loop 
-				while (have_posts() ) : the_post();
-				$icon = get_field('icon');
-				$description = get_field('description');
-				$size = "medium";
-			?>
-						<h3><?php the_title(); ?></h3>
-						<p><?php echo $description; ?></p>
-						<?php if($icon) { 
-							echo wp_get_attachment_image($icon, $size);
-			 			} ?>
-						
-			<?php endwhile; //end of the loop ?>
-		<?php wp_reset_query(); ?>
-	<!-- </ul> -->
 
 
 	<div class="interested-contact clearfix">
