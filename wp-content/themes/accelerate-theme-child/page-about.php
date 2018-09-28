@@ -19,18 +19,26 @@ get_header(); ?>
 
 	<div class="about-services clearfix">
 		<div class="services">
-			<?php // Start the loop
-				while ( have_posts() ) : the_post();
-					$type = get_field('type');
-					$description = get_field('description');
-					$icon = get_field('icon');
-					$size = 'full';
-				?>
-				<h4><?php the_title(); ?></h4>
-				<p><?php the_content(); ?></p>
+			<ul>
+				<?php new WP_Query('page=services'); ?>
+					<?php // Start the loop
+						while ( have_posts() ) : the_post();
+							$type = get_field('type');
+							$description = get_field('description');
+							$icon = get_field('icon');
+							$size = 'full';
+						?>
+						<h4><?php the_title(); ?></h4>
+						<p><?php the_content(); ?></p>
 
-				<h3><?php echo $type; ?></h3>
-			<?php endwhile; // end of the loop ?>
+						<h3><?php echo $type; ?></h3>
+						<p><?php echo $description; ?></p>
+						<figure>
+							<?php echo wp_get_attachment_image($image, $size); ?>
+						</figure>
+					<?php endwhile; // end of the loop ?>
+				<?php wp_reset_query(); ?>
+			</ul>	
 		</div>
 	</div>
 
