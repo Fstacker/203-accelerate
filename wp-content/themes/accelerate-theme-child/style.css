@@ -279,6 +279,28 @@ input#nf-field-4.ninja-forms-field {
 
 /* ----- ABOUT US | SERVICES ----- */
 
+/*#primary.about-page .hero-content{
+	background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+	opacity: .8;
+	margin: 0;
+	height: 350px;
+}*/
+
+div.our-services h4 {
+	font: 700 .9em/1.5 'Montserrat', Arial, sans-serif;
+	color: #333;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 5em 0 1em 0;
+}
+
+div.our-services p {
+	font: 400 1em/1.5 'Open Sans', Arial, sans-serif;
+	color: #555;
+	margin: auto;
+	text-align: center;
+}
 div.about-description p {
 	font: 600 1.5em/1.5 'Open Sans', Arial, sans-serif;
 	color: #fff;
@@ -294,20 +316,20 @@ div.about-services {
 	justify-content: center;
 }
 
-div.services h4 {
-	font: 700 .9275em/1.5 'Montserrat', Arial, sans-serif;
+div.services h3 {
+	font: 600 1.5em/1 'Open Sans', Arial, sans-serif;
 	color: #333;
 	letter-spacing: 1px;
-	clear: both;
-	text-transform: uppercase;
-	text-align: center;
-	margin-top: 4em;
 }
 
-div.services p {
+/*div.services p {
 	font: 400 1em/1.5 'Open Sans', Arial, sans-serif;
-	color: #333;
+	color: #555;
 	text-align: center;
+}*/
+
+div.services ul {
+	list-style: none;
 }
 
 div.about-services-box {
@@ -330,21 +352,6 @@ div.about-services {
 	width: 100%;
 	clear: both;
 	display: block;
-	text-align: center;
-}
-
-.services h4 {
-	font: 600 .8824em/1.47 'Montserrat', Arial, sans-serif;
-	color: #333;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	text-align: center;
-	margin-top: 4em;
-}
-
-.services p {
-	font: 400 1em/1.6 'Open Sans', Arial, sans-serif;
-	color: #333;
 	text-align: center;
 }
 
@@ -391,24 +398,25 @@ li.service-list-item h3 {
 
 .error-content {
 	background: url("img/404ndt.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
-	height: 750px;
+	height: 700px;
 	margin: 0;
 }
 
 .error-message {
-	max-width: 960px;
+	max-width: 500px;
 	width: 90%;
 	margin: 0;
 	display: block;
-}
-p.four-oh-four {
-	font: 700 10em 'Open Sans', Arial, sans-serif;
-	color: #000;
-	margin: 0;
-	letter-spacing: 2px;
 	float: right;
 }
 
-p.message {
+
+h1.four-oh-four {
+	font: 700 12em/1 'Open Sans', Arial, sans-serif;
+	color: #000;
+	margin: 25px 0;
+}
+
+h3.message {
 
 }

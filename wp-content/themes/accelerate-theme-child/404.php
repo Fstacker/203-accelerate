@@ -17,9 +17,9 @@ get_header(); ?>
 	<div id="primary" class="error-content">
 		<div class="error-main">
 			<?php while ( have_posts() ) : the_post(); ?>
-				<div class="error-message">
-					<p class="four-oh-four">404</p>
-					<p class="message">Look out, we got an error here.<br>Let’s try this again.</p>
+				<div class="error-message clearfix">
+					<h1 class="four-oh-four">404</h1>
+					<h3 class="message">Look out, we got an error here.<br>Let’s try this again.</h3>
 					<?php the_content(); ?>
 				</div>
 			<?php endwhile; // end of the loop. ?>

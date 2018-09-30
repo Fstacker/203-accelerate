@@ -17,27 +17,30 @@ get_header(); ?>
 		</div><!-- .main-content -->
 	</div><!-- #primary -->
 
+	<div class="our-services">
+		<h4>Our Services</h4>
+		<p>We take pride in our clients and the content we create for them.<br>
+		Here's a brief overview of our offered services.</p>
+	</div>
+
 	<div class="about-services clearfix">
 		<div class="services">
 			<ul>
-				<?php new WP_Query('page=services'); ?>
-					<?php // Start the loop
-						while ( have_posts() ) : the_post();
-							$type = get_field('type');
+				<?php $args = array(
+						'post_type' => 'services',
+					);
+					$services = new WP_Query($args);
+						// Start the loop
+						while ( $services -> have_posts() ) : $services->the_post();
 							$description = get_field('description');
 							$icon = get_field('icon');
-							$size = 'full';
 						?>
-						<h4><?php the_title(); ?></h4>
-						<p><?php the_content(); ?></p>
-
-						<h3><?php echo $type; ?></h3>
-						<p><?php echo $description; ?></p>
-						<figure>
-							<?php echo wp_get_attachment_image($image, $size); ?>
-						</figure>
-					<?php endwhile; // end of the loop ?>
-				<?php wp_reset_query(); ?>
+						<li class="services-item">
+							<h3><?php the_title(); ?></h3> 
+							<?php the_content(); ?>
+						</li>
+						<?php endwhile; // end of the loop ?>
+					<?php wp_reset_postdata(); ?>
 			</ul>	
 		</div>
 	</div>
@@ -45,8 +48,8 @@ get_header(); ?>
 
 
 	<div class="interested-contact clearfix">
-			<h3>Interested in working with us?</h3>
-			<a class="button" href="#">Contact Us</a>
+		<h3>Interested in working with us?</h3>
+		<a class="button" href="#">Contact Us</a>
 	</div>
 
 
