@@ -49,7 +49,7 @@ get_header(); ?>
 
 	<div class="interested-contact clearfix">
 		<h3>Interested in working with us?</h3>
-		<a class="button" href="#">Contact Us</a>
+		<a class="button" href="<?php echo site_url('/contact-us/') ?>">Contact Us</a>
 	</div>
 
 
