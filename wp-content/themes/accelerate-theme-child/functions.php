@@ -33,27 +33,38 @@ function create_custom_post_types() {
 			)
 		);
 
-	register_post_type ('services',
+	register_post_type ('about',
 		array(
 			'labels' => array(
 				'name' => __('Services'),
 				'singular_name' => __('Service')
 			),
 			'public' => true,
-			'has_archive' => false,
-			'rewrite' => array('slug' => 'services'),
+			'has_archive' => true,
+			'rewrite' => array('slug' => 'about'),
 			'show_in_nav_menus' => true,
 			)
 		);
+
+	//function accelerate_theme_child_widget_init() 
+	//	register_sidebar ( array(
+	//		'name' => __('Homepage sidebar', 'accelerate-theme-child'),
+	//		'id' => 'sidebar-2',
+	//		'description' => __('Appears on the static front page template', 'accelerate-theme-child'),
+	//		'before_widget' => '<aside id="%1$s" class="wideget %2$s">',
+	//		'after_widget' => '<h3 class="widget-title">',
+	//		'after_title' => '</h3>'
+	//	));
 	}
 
 // Hook function into theme
-add_action ('init', 'create_custom_post_types');
+add_action ('init', 'create_custom_post_types'); //'widgets_init', 'accelerate_theme_child_widget_init');
 
 
 // Enqueue scripts and styles.
 function accelerate_child_scripts() {
 	wp_enqueue_style( 'accelerate-style', get_template_directory_uri() . '/style.css' );
     wp_enqueue_style( 'child_style', get_stylesheet_directory_uri() . '/style.css');
+    wp_enqueue_style('accelerate-child-google-fonts', 'https://fonts.googleapis.com/css?family=Londrina+Solid:400,900" rel="stylesheet"'); 
 }
 add_action( 'wp_enqueue_scripts', 'accelerate_child_scripts' );

@@ -2,7 +2,7 @@
 Theme Name:   Accelerate Theme Child
 Theme URI:    http://example.com/accelerate-theme-child/
 Description:  Accelerate Child Theme - Accelerate
-Author:   	Your Name!
+Author:   	BRETT CORMIER
 Author URI:   http://example.com
 Template: 	accelerate-theme
 Version:      2.0.0
@@ -76,6 +76,7 @@ Text Domain:  accelerate-theme-child
 	list-style: none;
 	display: flex;
 	justify-content: space-between;
+	margin: 0;
 }
 
 .featured-work li {
@@ -403,7 +404,7 @@ li.service-list-item h3 {
 }
 
 .error-message {
-	max-width: 500px;
+	max-width: 450px;
 	width: 90%;
 	margin: 0;
 	display: block;
@@ -412,11 +413,14 @@ li.service-list-item h3 {
 
 
 h1.four-oh-four {
-	font: 700 12em/1 'Open Sans', Arial, sans-serif;
-	color: #000;
+	font: 700 12em/1 'Londrina Solid', cursive;
+	color: #333;
 	margin: 25px 0;
 }
 
-h3.message {
-
+p.message {
+	font: 600 2em/1 'Londrina Solid', cursive;
+	color: #333;
+	margin-right: 25px;
+	margin-top: 50px;
 }

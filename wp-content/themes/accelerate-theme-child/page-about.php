@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name:  About Page
+ * Template Name:
  *
  * @package WordPress
  * @subpackage Accelerate Marketing
@@ -33,7 +33,7 @@ get_header(); ?>
 						// Start the loop
 						while ( $services -> have_posts() ) : $services->the_post();
 							$description = get_field('description');
-							$icon = get_field('icon');
+							//$icon = get_field('icon');
 						?>
 						<li class="services-item">
 							<h3><?php the_title(); ?></h3> 
